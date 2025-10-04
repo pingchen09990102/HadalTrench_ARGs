@@ -6,7 +6,7 @@ library(tidyr)
 library(dplyr)
 library(cowplot)
 
-setwd("$HOMME/HadalTrench_ARGs/Fig1b")
+setwd("$HOME/HadalTrench_ARGs/Fig1b")
 df <- read.table("Fig1b.sourceData.txt", header = TRUE, row.names = 1,sep = "\t")
 MT16<-df[,1:4]
 MT17<-df[,5:7]
@@ -106,6 +106,7 @@ print(final_plot)
 
 # Save at pdf
 ggsave(final_plot, file="Fig1b.pdf")
+
 
 
 
