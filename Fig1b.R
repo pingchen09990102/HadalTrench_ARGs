@@ -1,5 +1,3 @@
-###气泡图###
-
 library(plyr)
 library(stringr)
 library(ggplot2)
@@ -108,5 +106,6 @@ print(final_plot)
 
 # Save at pdf
 ggsave(final_plot, file="Fig1b.pdf")
+
 
 
